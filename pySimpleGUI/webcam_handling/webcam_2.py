@@ -1,4 +1,4 @@
-import PySimpleGUI as sg
+import PySimpleGUI as simpleGUI
 import cv2
 
 
@@ -10,10 +10,10 @@ https://www.reddit.com/r/Python/comments/cpymni/7_lines_of_python_code_to_show_y
 
 
 def cam_2():
-    window = sg.Window(
+    window = simpleGUI.Window(
         'Demo Application - OpenCV Integration',
         [
-            [sg.Image(filename='', key='image')],
+            [simpleGUI.Image(filename='', key='image')],
         ],
         location=(800, 400))
 
@@ -32,10 +32,10 @@ def cam_2():
 
 def cam_2_v2():
     # define the window layout
-    layout = [[sg.Image(filename='', key='_IMAGE_')]]
+    layout = [[simpleGUI.Image(filename='', key='_IMAGE_')]]
 
     # create the window and show it without the plot
-    window = sg.Window('Demo Application - OpenCV Integration', layout, MAXIMISE) # location=(800, 400)
+    window = simpleGUI.Window('Demo App - OpenCV Integration', layout,location=(800, 400))
 
     # ---===--- Event LOOP Read and display frames, operate the GUI --- #
     cap = cv2.VideoCapture(0)  # Setup the OpenCV capture device (webcam)
@@ -44,8 +44,8 @@ def cam_2_v2():
         if event is None:
             break
         ret, frame = cap.read()  # Read image from capture device (camera)
-        imgbytes = cv2.imencode('.png', frame)[1].tobytes()  # Convert the image to PNG Bytes
-        window.FindElement('_IMAGE_').Update(data=imgbytes)  # Change the Image Element to show the new image
+        img_bytes = cv2.imencode('.png', frame)[1].tobytes()  # Convert the image to PNG Bytes
+        window.FindElement('_IMAGE_').Update(data=img_bytes)  # Change the Image Element to show the new image
 
 
 if __name__ == '__main__':

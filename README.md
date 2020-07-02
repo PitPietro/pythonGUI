@@ -6,6 +6,9 @@ This repo is aimed to test all the major Python libraries that build Graphic Use
 - [Prerequisites](#prerequisites)
     - [Suggested virtual environment](#suggested-virtual-environment)
     - [Suggested IDE](#suggested-ide)
+- [Libraries](#libraries)
+    - [PySimpleGUI](#pysimplegui)
+        - [Inside the event loop](#inside-the-event-loop)
 - [Contribute](#contribute)
 - [Versioning](#versioning)
 - [Author](#author)
@@ -22,6 +25,15 @@ I'll write you how to create the environment I am using.
 
 ### Suggested IDE
 I suggest you to use [PyCharm](https://www.jetbrains.com/pycharm/)
+
+## Libraries
+
+### PySimpleGUI
+
+#### Inside the event loop
+For persistent windows (after creating the window), you have an event loop that runs until you exit the window. Inside this loop you will read values that are returned from reading the window and you'll operate on elements in your window. To operate on elements, you look them up and call their method functions such as `update`.
+
+##### Element 
 
 ## Contribute
 Feel free to contribute by opening a pull request, but take care about the naming conventions.

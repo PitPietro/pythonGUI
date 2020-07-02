@@ -15,7 +15,8 @@ def cam_2():
         [
             [simpleGUI.Image(filename='', key='image')],
         ],
-        location=(800, 400))
+        location=(800, 400)).Finalize()
+    window.Maximize()
 
     cap = cv2.VideoCapture(0)  # Setup the camera as a capture device
 

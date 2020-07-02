@@ -1,4 +1,4 @@
-#Python GUI project
+# Python GUI project
 This repo is aimed to test all the major Python libraries that build Graphic User Interface.
 
 ## Table of contents

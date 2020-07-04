@@ -17,6 +17,7 @@
         - [Button shortcuts](#button-shortcuts)
 - [Contribute](#contribute)
 - [Versioning](#versioning)
+- [License](#license)
 - [Author](#author)
 
 <hr>
@@ -93,6 +94,9 @@ There are also shortcuts for more generic button functions:
 Feel free to contribute by opening a pull request, but take care about the naming conventions.
 ## Versioning
 For the versions available, see the [tags on this repository](https://github.com/PitPietro/pythonGUI/tags).
+
+## License
+This project is open source, under a [MIT License](LICENSE).
 
 ## Author
 **Pietro Poluzzi** - [PitPietro](https://github.com/PitPietro)

@@ -1,5 +1,8 @@
 # Python GUI project
-This repo is aimed to test all the major Python libraries that build Graphic User Interface.
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/PitPietro/pythonGUI?include_prereleases)
+![GitHub repo size](https://img.shields.io/github/repo-size/PitPietro/pythonGUI)
+![GitHub](https://img.shields.io/github/license/PitPietro/pythonGUI)
+<br>This repo is aimed to test all the major Python libraries that build Graphic User Interface.
 
 ## Table of contents
 - [Discuss the project](#discuss-the-project)

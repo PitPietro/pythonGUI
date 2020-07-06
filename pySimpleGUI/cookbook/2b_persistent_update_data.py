@@ -1,6 +1,8 @@
 import PySimpleGUI as simpleGUI
 
-from pySimpleGUI.cookbook.themes import select_random_theme, DEFAULT_THEME
+from pySimpleGUI.cookbook.themes import (
+    select_random_theme,
+    DEFAULT_THEME)
 
 '''
 https://pysimplegui.readthedocs.io/en/latest/cookbook/#recipe-pattern-2b-persistent-window-multiple-reads-using-an-event-loop-updates-data-in-window

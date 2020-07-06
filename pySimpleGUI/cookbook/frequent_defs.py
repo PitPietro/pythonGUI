@@ -1,5 +1,6 @@
 import PySimpleGUI as simpleGUI
 
+
 def exiting_win_1(event):
     if event in (simpleGUI.WIN_CLOSED, 'Quite'):
         pass

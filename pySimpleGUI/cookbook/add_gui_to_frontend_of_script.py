@@ -3,6 +3,9 @@ import sys
 
 import PySimpleGUI as simpleGUI
 
+from file_recognizer.extension_finder import find_extension
+from file_recognizer.type_finder import is_image, is_text
+
 '''
 https://pysimplegui.readthedocs.io/en/latest/cookbook/#recipe-1-shot-window-simple-data-entry-return-values-auto
 -numbered If you do not specify a key and the element is an input element, a key will be provided for you in the form 
@@ -74,7 +77,13 @@ def open_file(file_to_open):
         simpleGUI.popup("Cancel", "No filename supplied")
         raise SystemExit("Cancelling: no filename supplied")
     else:
-        cmd = 'libreoffice {}'.format(file_to_open)
+        file_extension = find_extension(file_to_open)[1]
+        if is_image(file_extension):
+            cmd = 'shotwell {}'.format(file_to_open)
+        elif is_text(file_extension):
+            cmd = 'gedit {}'.format(file_to_open)
+        else:
+            cmd = 'libreoffice {}'.format(file_to_open)
         os.system(cmd)
         simpleGUI.popup('The filename you chose was', file_to_open)
 

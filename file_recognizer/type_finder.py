@@ -6,7 +6,8 @@ https://www.file-extensions.org/filetype/extension/name/text-files
 
 def is_image(ext):
     ext = ext.lower()
-    img_ext_list = ['.jpg', '.png', '.gif', '.webp', '.tiff', '.psd', '.raw', '.bmp', '.heif', '.indd', '.jpeg 2000']
+    img_ext_list = ['.jpg', '.png', '.gif', '.nef', '.webp', '.tiff', '.psd', '.raw', '.bmp', '.heif', '.indd',
+                    '.jpeg 2000']
     if ext in img_ext_list:
         return True
     else:

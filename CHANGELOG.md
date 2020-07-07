@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.06.07.20](https://github.com/PitPietro/pythonGUI/tree/v1.06.07.20) (2020-07-06)
+
+[Full Changelog](https://github.com/PitPietro/pythonGUI/compare/v1.04.07.20...v1.06.07.20)
+
 ## [v1.04.07.20](https://github.com/PitPietro/pythonGUI/tree/v1.04.07.20) (2020-07-02)
 
 [Full Changelog](https://github.com/PitPietro/pythonGUI/compare/fd3c5946f1f8ebd4704a838b91ac98b61edf2863...v1.04.07.20)

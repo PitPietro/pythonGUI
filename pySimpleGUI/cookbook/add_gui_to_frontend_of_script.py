@@ -82,6 +82,6 @@ def open_file(file_to_open):
 if __name__ == '__main__':
     # simple_data_entry_win()
     browse_file()
-    browse_file_single_line()
-    browse_file_v2()
-    browse_file_single_line_v2()
+    # browse_file_single_line()
+    # browse_file_v2()
+    # browse_file_single_line_v2()

@@ -7,4 +7,4 @@ def find_extension(path):
 
 
 if __name__ == '__main__':
-    print(find_extension('/home/oasiwild01/Documents/pythonGUI/pySimpleGUI/cookbook/themes.py'))
+    print(find_extension('/home/pit/Documents/pythonGUI/pySimpleGUI/cookbook/themes.py'))
